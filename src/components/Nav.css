@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  color: white;
+  overflow-x: scroll;
+  padding: 10px;
+  padding-left: 40px;
+}
+/*Hide scroll bar for chrom,safari and opera*/
+.nav::-webkit-scrollbar {
+  display: none;
+}
+/*Hide Scrollbar for IE , Edge and Firefox*/
+.nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

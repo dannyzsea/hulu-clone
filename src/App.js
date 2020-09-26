@@ -1,14 +1,13 @@
 import React from "react";
 import Header from "./components/Header";
+import Nav from "./components/Nav";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <p>This is Hulu Clone</p>
+    <div className="app">
       <Header />
-      {/*Header */}
-      {/*Nav*/}
+      <Nav />
       {/*Results */}
     </div>
   );

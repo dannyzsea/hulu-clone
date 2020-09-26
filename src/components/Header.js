@@ -11,12 +11,30 @@ function Header() {
   return (
     <div className="header">
       <div className="header_icns">
-        <HomeIcon />
-        <FlashOnIcon />
-        <LiveTvIcon />
-        <VideoLibraryIcon />
-        <SearchIcon />
-        <PersonOutlineIcon />
+        <div className="header_icn header_icn--active">
+          <HomeIcon />
+          <p>Home</p>
+        </div>
+        <div className="header_icn">
+          <FlashOnIcon />
+          <p>Trending</p>
+        </div>
+        <div className="header_icn">
+          <LiveTvIcon />
+          <p>Verified</p>
+        </div>
+        <div className="header_icn">
+          <VideoLibraryIcon />
+          <p>Collections</p>
+        </div>
+        <div className="header_icn">
+          <SearchIcon />
+          <p>Search</p>
+        </div>
+        <div className="header_icn">
+          <PersonOutlineIcon />
+          <p>Account</p>
+        </div>
       </div>
       <img
         src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png "
