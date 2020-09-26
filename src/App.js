@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Content from "./components/Content";
+import VideoCard from "./components/VideoCard";
 import "./App.css";
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
     <div className="app">
       <Header />
       <Nav />
-      {/*Results */}
+      <Content />
     </div>
   );
 }
