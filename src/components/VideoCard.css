@@ -6,7 +6,7 @@
   transition: transform 80ms ease-out;
 }
 .videoCard:hover {
-  transform: scale(1.08);
+  transform: scale(1.09);
 }
 .videoCard > img {
   height: 300px;
@@ -15,4 +15,10 @@
 }
 .videoCard > h2 {
   padding-top: 10px;
+}
+.videoCard:hover > .videoCardChild1 {
+  display: inline;
+}
+.videoCardChild1 {
+  display: none;
 }

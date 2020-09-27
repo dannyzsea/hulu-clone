@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Content from "./components/Content";
-import VideoCard from "./components/VideoCard";
+import requests from "./requests";
 import "./App.css";
-
 function App() {
+  const [selectedByUser, setSelectedByUser] = useState(requests.fetchTrending);
   return (
     <div className="app">
       <Header />
-      <Nav />
-      <Content />
+      <Nav setSelectedByUser={setSelectedByUser} />
+      <Content selectedByUser={selectedByUser} />
     </div>
   );
 }
